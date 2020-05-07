@@ -3,9 +3,9 @@ def find_even_values(src)
   #
   # Output all even values in each nested array
   src.each { |r|
-    src[r].each { |e|
-      if src[r][e].even?
-        puts src[r][e]
+    r.each { |e|
+      if e.even?
+        puts e
       end
     }
   }
